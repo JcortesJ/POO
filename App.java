@@ -44,7 +44,7 @@ public class App {
         System.out.println("\n");
             for(int i = 0; i< 3; i++){
             for(int j=0; j<3; j++){
-                System.out.println("| "+cervezas[i][j]+" |");
+                System.out.print("| "+cervezas[i][j]+" |");
                 
                 
             }
@@ -54,7 +54,7 @@ public class App {
         System.out.println("Cafes" + "\n");
             for(int a = 0; a< 4; a++){
             for(int b=0; b<4; b++){
-                System.out.println("| "+cafes[a][b]+" |");
+                System.out.print("| "+cafes[a][b]+" |");
             }
             System.out.println("\n");
         }
@@ -74,7 +74,7 @@ public class App {
         System.out.println("La respuesta  (cervezas) es: ");
         
         for(int k = 0; k<3; k++){
-            System.out.println(respuesta_cerveza[k]+" ");
+            System.out.print(respuesta_cerveza[k]+" ");
         }
     }
     
@@ -112,14 +112,11 @@ public class App {
         System.out.println("La respuesta (cafes) es: ");
         for(int k = 0; k<4; k++){
             
-            System.out.println(respuesta_cafe[k]+" ");
+            System.out.print(respuesta_cafe[k]+" ");
 
         }
     }
 }
-
-
-
 
 
 
