@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author juan manuel
  */
-public class tarea3_jm {
+public class tarea3 {
 
     /**
      * @param args the command line arguments
