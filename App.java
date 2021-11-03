@@ -111,7 +111,7 @@ public class App {
         System.out.println("\n");
         System.out.println("La respuesta (cafes) es: ");
         for(int k = 0; k<4; k++){
-            
+            //comentario
             System.out.print(respuesta_cafe[k]+" ");
 
         }
