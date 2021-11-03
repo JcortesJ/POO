@@ -44,55 +44,63 @@ Entregar, el diagrama UML y las clases del proyecto.
 
 */
 
-class profesor{
-    private String nombreApellido;
+class Profesor{
+    private String nombre;
     private int edad;
-    private String usuario;
-    private String nivel_educativo;
-    private List<Cursos> dictados;
-    private List<Subsidios> obtiene;
-    private List <Notas> califica;
+    private String ID;
+    private String email;
+    private List<Grupos> dictados;
+    //private List<Subsidios> obtiene;
+    //private List <Notas> califica;
+    //pendiente para más tarde
 }
 
-class estudiante{
-    private String nombreApellido;
+class Estudiante{
+    private String nombre;
     private int edad;
     private String usuario;
-    private String gradoActual;
-    private List<Cursos> atiende;
+    private String ID;
+    private List<Grupos> atiende;
     private List<Subsidios> obtiene;
-    private List <Notas> saca;
+    private List<Materias> materiasinscritas;
+    //private List <Notas> recibe;
 }
 
-class UsuarioExterno{
-    private String nombreApellido;
-    private int edad;
-    private String usuario;
-    private int documento;
+class Papitos{
+    private String nombre;
+    private int ID;
+    private List<Estudiante> acudiente;
     
 }
 
 
 
-class Cursos{
+class Grupos{
     private int numero;
     private String[] horario;
     private String[] vecesAlaSemana;
-    private Materia nombre;
-    private profesor dadoPor;
-    private 
-}
+    private List<Materias> nombre;
+    private List<Profesor> dadoPor;
+    
+            }
 
 class Subsidios{
-    
+    private String tipo;
+    private double valor;
+    private int duracionSemestres;
+    private List<Estudiante> beneficiarios;
 }
 
 class Notas{
-    
+    private int valor;
+    private List<Estudiante> asignar;
 }
 
-class Materia{
-   
+class Materias{
+   private int codigo;
+   private String nombre;
+   private int creditos;
+   private List<Grupos> grupos;
 }
     
 
