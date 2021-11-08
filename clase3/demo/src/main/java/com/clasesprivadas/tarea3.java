@@ -160,9 +160,37 @@ class Notas{
 
 class Materias{
    private int codigo;
-   private String nombre;
-   private int creditos;
-   private ArrayList<Grupos> grupos;
+    private String nombre;
+    private int creditos;
+    private ArrayList<Grupos> grupos;
+
+    public int getCodigo(){
+        return this.codigo;
+    }
+    public void setCodigo(int codigoMateria){
+        this.codigo = codigoMateria;
+    }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+    public void setNombre(String nombreMateria){
+        this.nombre = nombreMateria;
+    }
+
+    public int getCreditos(){
+        return this.creditos;
+    }
+    public void setCreditos(int creditosMateria){
+        this.creditos = creditosMateria;
+    }
+
+    public Grupos getGrupos(int indice){
+        return this.grupos.get(indice);
+    }
+    public void setGrupos(Grupos grupoMateria){
+        this.grupos.add(grupoMateria);
+    }
 }
     
 
