@@ -118,38 +118,112 @@ class Papitos{
 
 
 
-class Grupos{
-    private int numero;
-    private String[] horario;
-    private ArrayList<Materias> nombre;
-    private Profesor profesor;
+public class Grupos{
+    private int codigo;
     private int cupos;
+    private Profesor profesor;
     private ArrayList<Estudiante> estudiantes;
-    //Los estudiantes deben poder inscribirse a los grupos
+    private String[] horario;
+    private Asignatura asignatura;
     private ArrayList<Notas> notasGrupo;
-    
-    public void setHorario(String i, int indice){ //habria que decirle al usuario, que cada dia de la semana tiene un numero
-        //y que segun ese dia pues ponga el respectivo.
-        this.horario[indice] = i; 
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getCupos() {
+        return cupos;
+    }
+
+    public void setCupos(int cupos) {
+        this.cupos = cupos;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
+
+    public ArrayList<Estudiante> getEstudiantes() {
+        return estudiantes;
+    }
+
+    public void setEstudiantes(ArrayList<Estudiante> estudiantes) {
+        this.estudiantes = estudiantes;
+    }
+
+    public String[] getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String[] horario) {
+        this.horario = horario;
+    }
+
+    public Asignatura getAsignatura() {
+        return asignatura;
+    }
+
+    public void setAsignatura(Asignatura asignatura) {
+        this.asignatura = asignatura;
+    }
+
+    public ArrayList<Notas> getNotasGrupo() {
+        return notasGrupo;
+    }
+
+    public void setNotasGrupo(ArrayList<Notas> notasGrupo) {
+        this.notasGrupo = notasGrupo;
     }
     
-    public void getHorario(){
-        for(int i=0; i< horario.length; i++){
-            System.out.println(horario[i]);
-        }
-        //queda pendiente hacer un override del metodo String, para mostrar de una forma más
-        //apropiada la información. 
-    }
-    
-    }
+   }
     
             
 
 class Subsidios{
     private String tipo;
     private double valor;
-    private int duracionSemestres;
+    private int duraciónSemestres;
     private ArrayList<Estudiante> beneficiarios;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public int getDuraciónSemestres() {
+        return duraciónSemestres;
+    }
+
+    public void setDuraciónSemestres(int duraciónSemestres) {
+        this.duraciónSemestres = duraciónSemestres;
+    }
+
+    public ArrayList<Estudiante> getBeneficiarios() {
+        return beneficiarios;
+    }
+
+    public void setBeneficiarios(ArrayList<Estudiante> beneficiarios) {
+        this.beneficiarios = beneficiarios;
+    }
 }
 
 class Notas{
