@@ -64,22 +64,77 @@ class Profesor{
 }
 
 class Estudiante{
-    private String nombre;
+   private String nombre;
     private int edad;
     private String usuario;
-    private String ID;
     private Papitos acudiente;
+    private int ID;
     private ArrayList<Grupos> atiende;
-    private ArrayList<Subsidios> obtiene;
-    private ArrayList<Materias> materiasinscritas;
-    private ArrayList<Notas> recibe;
-    
-    public void setAcudiente(Papitos a){
-        this.acudiente = a;
+    private ArrayList<Materias> materiasInscritas;
+    private ArrayList<Subsidios> subsidios;
+    private ArrayList<Notas> notas;
+
+    public String getNombre(){
+        return this.nombre;
     }
-    
+    public void setNombre(String nombreEstudiante){
+        this.nombre = nombreEstudiante;
+    }
+
+    public int getEdad(){
+        return this.edad;
+    }
+    public void setEdad(int edadEstudiante){
+        this.edad = edadEstudiante;
+    }
+
+    public String getUsuario(){
+        return this.usuario;
+    }
+    public void setUsuario(String usuarioEstudiante){
+        this.usuario = usuarioEstudiante;
+    }
+
     public Papitos getAcudiente(){
         return this.acudiente;
+    }
+    public void setAcudiente(Papitos acudienteEstudiante){
+        this.acudiente = acudienteEstudiante;
+    }
+
+    public int getID(){
+        return this.ID;
+    }
+    public void setID(int idEstudiante){
+        this.ID = idEstudiante;
+    }
+
+    public Grupos getAtiende(int indice){
+        return this.atiende.get(indice);
+    }
+    public void setAtiende(Grupos grupoAtendido){
+        this.atiende.add(grupoAtendido);
+    }
+
+    public Materias getMateriasInscritas(int indice){
+        return this.materiasInscritas.get(indice);
+    }
+    public void setMateriasInscritas(Materias materiaEstudiante){
+        this.materiasInscritas.add(materiaEstudiante);
+    }
+
+    public Subsidios getSubsidios(int indice){
+        return this.subsidios.get(indice);
+    }
+    public void setSubsidios(Subsidios subsidioEstudiante){
+        this.subsidios.add(subsidioEstudiante);
+    }
+
+    public Notas getNotas(int indice){
+        return this.notas.get(indice);
+    }
+    public void setNotas(Notas notaestudiante){
+        this.notas.add(notaestudiante);
     }
     
 }
